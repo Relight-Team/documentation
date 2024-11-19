@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EthanBoiDev | Relight Engine</title>
+        <link rel="stylesheet" href="../../../../Relight.css">
+    </head>
+
+    <!-- NAV BAR -->
+    <body>
+        <div id="Headers">
+            <h2>EthanBoiDev</h2>
+             <h3>Relight Engine Documentation</h3>
+            </div>
+        </div>
+
+
+    <!-- main -->
+
+<h3>Core::Math::Range</h3>
+
+<p>Core::Math::Range handles the Range Class</p>
+
+<p>Range are similar to that of arrays, but instead of storing each value individually, it stores a lower bound and higher bound, and fills in the gaps</p>
+<p>This is very useful for performance and memory issues regarding large sets of arrays</p>
+
+<div id="Class">
+    <div id="ClassTitle">
+        <h4>Class Range</h4>
+    </div>
+
+    <div id="Code">
+        <p>Range(Template Both)</p>
+    </div>
+
+    <p>A constructor that set both lower bound and upper bound to both the same number as inclusive. [Both, Both]</p>
+    <hr>
+
+    <div id="Code">
+        <p>Range(Template LowerBound, Template HigherBound)</p>
+    </div>
+
+    <p>A constructor that set's lower bound to LowerBound as an inclusive and upper bound to HigherBound as an exclusive. [LowerBound, HigherBound)</p>
+    <hr>
+
+    <div id="Code">
+        <p>Range(RangeBound(T) LowerBound, RangeBound(T) HigherBound)</p>
+    </div>
+
+    <p>A constructor that sets the LowerBound and HigherBound based on the RangeBound Class</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool IsAdjoint(Range Second)</p>
+    </div>
+
+    <p>Checks both the parent Range and the second Range and returns if it's Adjointed</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool Contains(Template Value)</p>
+    </div>
+
+    <p>Returns true if the Range contans a value</p>
+    <hr>
+</div>
+
+
+
+    </body>
+</html>
+

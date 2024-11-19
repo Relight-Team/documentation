@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EthanBoiDev | Relight Engine</title>
+        <link rel="stylesheet" href="/Projects/Relight-Engine/Docs/Relight.css">
+    </head>
+
+    <!-- NAV BAR -->
+    <body>
+        <div id="Headers">
+            <h2>EthanBoiDev</h2>
+             <h3>Relight Engine Documentation</h3>
+            </div>
+        </div>
+
+
+    <!-- main -->
+
+<h3>Build files</h3>
+
+<p>Build files are files that end's with **.build** and tells RBT how to build the module, these modules will be stored in a temp folder until the target file compiles them all into a single executable</p>
+
+<hr>
+
+<h4>Commands</h4>
+
+<div id="Code">
+    <p>Name = String</p>
+</div>
+<p>The name of the build, this will also be the name for the module</p>
+
+<div id="Code">
+    <p>EntryFile = String</p>
+</div>
+<p>The source code file that the compiler should compile first, should link other files needed</p>
+
+<div id="Code">
+    <p>Dependencies = [String Array]</p>
+</div>
+<p>Dependencies will be access via the /Runtime directory and build from the public entry file, they link and build them together into a single executable.</p>
+
+<div id="Code">
+    <p>PublicLink = [String Array]</p>
+</div>
+<p>Including a file path will link them together, allow for external header files to easily be accessed</p>
+
+
+
+
+
+    </body>
+</html>
+

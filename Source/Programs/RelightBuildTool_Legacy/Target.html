@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EthanBoiDev | Relight Engine</title>
+        <link rel="stylesheet" href="../../Relight.css">
+    </head>
+
+    <!-- NAV BAR -->
+    <body>
+        <div id="Headers">
+            <h2>EthanBoiDev</h2>
+             <h3>Relight Engine Documentation</h3>
+            </div>
+        </div>
+
+
+    <!-- main -->
+
+<h3>Target files</h3>
+
+<p>Target files are files that end in **.Target** and tells RBT how to build the project.</p>
+
+<hr>
+
+<h4>Commands</h4>
+
+<div id="Code">
+    <p>Name = String</p>
+    </div>
+    <p>The name of the target, this will also be the name for the final executable</p>
+    <div id="Code">
+    <p>Target = String</p>
+    </div>
+    <p>Will both place and configure the file depending on it's target</p>
+    <ul>
+        <li>Game = The entire compiled code located in the project's own "bin" directory, mainly for games</li>
+        <li>Full = Like Game but stores it in the "Engine" bin directory, mainly for engine itself</li>
+        <li>Client = Like Full but with server code excluded</li>
+        <li>Server = Like Full but with Client code excluded</li>
+        <li>Editor = The compiled code created for expanding the Relight Editor</li>
+        <li>Software = Code that is built on top of Relight Engine</li>
+    </ul>
+
+    <div id="Code">
+    <p>ExtraDependencies = [String Array]</p>
+    </div>
+    <p>An array of dependencies that the target will compile together, these usually will access the .Build file from within them</p>
+
+
+
+
+    </body>
+</html>
+

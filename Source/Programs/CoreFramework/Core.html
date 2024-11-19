@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>EthanBoiDev | Relight Engine</title>
+        <link rel="stylesheet" href="/Projects/Relight-Engine/Docs/Relight.css">
+    </head>
+
+    <!-- NAV BAR -->
+    <body>
+        <div id="Headers">
+            <h2>EthanBoiDev</h2>
+             <h3>Relight Engine Documentation</h3>
+            </div>
+        </div>
+
+
+    <!-- main -->
+
+<h3>CoreFramework.Core</h3>
+
+<p>The absolute core, contains very common functionality</p>
+
+<h4>Classes</h4>
+<div id="Class">
+    <div id="ClassTitle">
+    <h4>Class AsyncEvent</h4>
+    </div>
+
+    <div id="Code">
+    <p>void Start()</p>
+    </div>
+
+    <p>Constantly monitors the completion status of a future object until it is complete.</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void Restart()</p>
+    </div>
+
+    <p>Resets all values to default</p>
+
+    <hr>
+
+
+    <div id="Code">
+    <p>void ChangeToComplete()</p>
+    </div>
+
+    <p>Set the promise object to true</p>
+
+    <hr>
+
+
+    <div id="Code">
+    <p>bool isReady()</p>
+    </div>
+
+    <p>Returns whether the future is complete or not</p>
+
+</div>
+
+<hr>
+
+<div id="Class">
+    <div id="ClassTitle">
+    <h4>Class Boxed</h4>
+    </div>
+
+    <div id="Code">
+    <p>Boxed(T Value)</p>
+    </div>
+
+    <p>A Constructor that set's a value</p>
+
+</div>
+
+<hr>
+
+<div id="Class">
+    <div id="ClassTitle">
+    <h4>class BuzHash</h4>
+    </div>
+
+    <div id="Code">
+    <p>BuzHash()</p>
+    </div>
+
+    <p>A Constructor that set's the current to 0</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>BuzHash(int i)</p>
+    </div>
+
+    <p>A Constructor that set's the current to value i</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void Reset()</p>
+    </div>
+
+    <p>Reset the current back to 0</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>unsigned int GetCurrent()</p>
+    </div>
+
+    <p>returns the current</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>unsigned int Add(unsigned int cur, uint8_t var)</p>
+    </div>
+
+    <p>returns the updated hash to spacific byte variable</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void Add(uint8_t var)</p>
+    </div>
+
+    <p>Set the current to itself + var</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void Sub(uint8_t var, int t)</p>
+    </div>
+
+    <p>modifies the current via removing 1 byte from the hash window</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>unsigned int Sub(unsigned int Current, uint8_t var, int t)</p>
+    </div>
+
+    <p>returns the inputted current with modifications via removing 1 byte from teh hash window</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>static unsigned int Threshold(int size)</p>
+    </div>
+
+    <p>Returns (1L << 32) / size;</p>
+
+
+</div>
+
+<hr>
+
+<div id="Class">
+    <div id="ClassTitle">
+    <h4>class Task</h4>
+    </div>
+
+    <div id="Code">
+    <p>Task(function func)</p>
+    </div>
+
+    <p>A constructor that set's the function</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void start()</p>
+    </div>
+
+    <p>If not running, it will create a future</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void wait()</p>
+    </div>
+
+    <p>If running, will wait the future state to be ready, and turn running off</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void wait(int milisecs)</p>
+    </div>
+
+    <p>If running, will wait for milisecs for the future state to be ready, and turn running off</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>void delay(int milisecs)</p>
+    </div>
+
+    <p>Will delay the future function for milisecs</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>Task ConfigureAwait(bool continueOn)</p>
+    </div>
+
+    <p>set continueOnCapturedContext to continueOn and returns itself</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>T get()</p>
+    </div>
+
+    <p>Returns the future's result</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>bool isCompleted()</p>
+    </div>
+
+    <p>Returns if the future is ready</p>
+
+</div>
+
+<hr>
+
+<div id="Class">
+    <div id="ClassTitle">
+    <h4>Class CancellationToken</h4>
+    </div>
+
+    <div id="Code">
+    <p>bool IsCancellationRequested()</p>
+    </div>
+
+    <p>Returns if it's cancelled</p>
+
+    <hr>
+
+    <div id="Code">
+    <p>future getToken()</p>
+    </div>
+
+    <p>Returns the future</p>
+
+</div>
+
+<hr>
+
+<h4>Functions</h4>
+
+
+<div id="Code">
+<p>static vector ConvertAllItems(vector input, function func)</p>
+</div>
+
+<p>runs the function for each vector entry and returns the modified vector</p>
+
+<hr>
+
+<div id="Code">
+<p>static string GetOriginalLoc()</p>
+</div>
+
+<p>returns the location of the currently running executable</p>
+
+<hr>
+
+<div id="Code">
+<p>string GetOriginalLoc(const string& filepath)</p>
+</div>
+
+<p>returns the location of the inputted executable</p>
+
+<hr>
+
+<div id="Code">
+<p>static Task ToTask(CancellationToken token)</p>
+</div>
+
+<p>Converts a Cancellation Token to a Task</p>
+
+<hr>
+
+<div id="Code">
+<p>static bool AttemptResult(Task task, T& result)</p>
+</div>
+
+<p>Attempts to get the task result and store it to result value, if fails, it will set "default!" to result value. it will return true if it got an result and false if it failed</p>
+
+<hr>
+
+<div id="Code">
+<p>string GetCurrent()</p>
+</div>
+
+<p>returns "Windows", "Linux", or "Apple" based on the system it is currently running</p>
+
+<hr>
+
+<div id="Code">
+<p>string ExeExt()</p>
+</div>
+
+<p>returns the executable extension supported on the system. ".exe" if on windows and "" on other systems</p>
+
+<hr>
+
+
+
+
+    </body>
+</html>
+

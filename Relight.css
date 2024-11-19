@@ -1,0 +1,156 @@
+body
+{
+    background-color: #5a5a5a;
+    color: white;
+}
+
+ img {
+  max-width: 100%;
+  height: auto;
+}
+
+#Headers
+{
+    background-color: #000C43;
+    position: relative;
+    margin-top: 0;
+    top: -20px;
+}
+
+.dropbtn {
+  background-color: #000C43;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:link {
+ color:black
+}
+.dropdown-content a:visited {
+ color:black
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #0000;}
+
+
+#TextCenter
+{
+    text-align: center;
+}
+
+#TextLeft
+{
+    text-align: left;
+}
+
+#TextRight
+{
+    text-align: right;
+}
+
+#ImgCenter
+{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#ImgRight
+{
+    display: block;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+#TBox
+{
+    align-items: center;
+}
+
+#TBox img
+{
+     margin-right: 10px;
+}
+
+
+#Download_Butt
+{
+  width: 380px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1%;
+}
+
+#SelectRow
+{
+
+ margin-left: auto;
+ margin-right: auto;
+ padding: 5px;
+ display: flex;
+}
+
+#SelectRow img
+{
+ width: 280px;
+ height: 280px;
+}
+
+ /* unvisited link */
+a:link {
+  color: orange;
+  background-color: #2e2e2e;
+}
+
+/* visited link */
+a:visited {
+  color: orange;
+  background-color: #2e2e2e;
+}
+
+#Code
+{
+  color: #c265f7;
+  background-color: #171717;
+}
+
+#ClassTitle
+{
+  color: #5757ff;
+  background-color: #171717;
+}
+
+#Class
+{
+  border-style:solid;
+  border-color:#c9c9c9;
+  border-width:2px;
+}
