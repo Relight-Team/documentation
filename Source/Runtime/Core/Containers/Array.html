@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Documentation | Relight Engine</title>
+        <link rel="stylesheet" href="/documentation/Relight.css">
+    </head>
+
+    <!-- NAV BAR -->
+    <body>
+        <div id="Headers">
+            <h2>Relight Team</h2>
+             <h3>Relight Engine Documentation</h3>
+            </div>
+        </div>
+
+
+
+    <!-- main -->
+
+<h3>Array</h3>
+
+<p>Array handles the Array Class</p>
+
+<p>Array is a custom Relight class that can store multiple values of the same type, unlike C's version, this one can be treated as both fixed size and dynamic size</p>
+
+<div id="Class">
+    <div id="ClassTitle">
+        <h4>Class Array (Template)</h4>
+    </div>
+
+    <div id="Code">
+        <p>Array(Template Repeat, int Size)</p>
+    </div>
+
+    <p>A constructor that repeats the same value X amount of times</p>
+    <hr>
+
+    <div id="Code">
+        <p>Array(int Size)</p>
+    </div>
+
+    <p>A constructor that set's the default size</p>
+    <hr>
+
+    <div id="Code">
+        <p>int Num()</p>
+    </div>
+
+    <p>Returns the size of the array, starts at 1</p>
+    <hr>
+
+    <div id="Code">
+        <p>int Size()</p>
+    </div>
+
+    <p>Returns the size of the array, starts at 0</p>
+    <hr>
+
+    <div id="Code">
+        <p>void Print()</p>
+    </div>
+
+    <p>A debug feature that prints each value in the array, it should print something like this:</p>
+
+    <div id="Code">
+        <p>0 | 1 | 2 | 3 | </p>
+    </div>
+    <hr>
+
+    <div id="Code">
+        <p>bool Contains(Template Input)</p>
+    </div>
+
+    <p>Returns true if Input was found in the array</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool Find(T Input, int& Value)</p>
+    </div>
+
+    <p>If Input exist in array, store the index of the first instance into Value, return's true if successful</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool FindLast(T Input, int& Value)</p>
+    </div>
+
+    <p>If Input exist in array, store the index of the last instance into Value, return's true if successful</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool GetTypeSize()</p>
+    </div>
+
+    <p>Returns the size of the array type</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool IsValidIndex(int Index)</p>
+    </div>
+
+    <p>If the index is valid, return True, otherwise, return false</p>
+    <hr>
+
+    <div id="Code">
+        <p>T Last()</p>
+    </div>
+
+    <p>Return the last item</p>
+    <hr>
+
+    <div id="Code">
+        <p>T Last(int a)</p>
+    </div>
+
+    <p>Return the item backwards by a, (for example, if a = 1, it would return the second to last item)</p>
+    <hr>
+
+    <div id="Code">
+        <p>T Top()</p>
+    </div>
+
+    <p>Return the first item</p>
+    <hr>
+
+    <div id="Code">
+        <p>T Top(int a)</p>
+    </div>
+
+    <p>Return the item upwards by a, (for example, if a = 1, it would return the second item)</p>
+    <hr>
+
+    <div id="Code">
+        <p>void Add(T Input)</p>
+    </div>
+
+    <p>Adds the Input to the array</p>
+    <hr>
+
+    <div id="Code">
+        <p>void Append(Array& Input, int Size)</p>
+    </div>
+
+    <p>Will get each value of the Input up to the size amount and adds them to the array</p>
+    <hr>
+
+    <div id="Code">
+        <p>void SetNum(int NewSize)</p>
+    </div>
+
+    <p>Change the size of the array, if the new size is shorter than the current size, then it will erase each desired value backwards</p>
+    <hr>
+
+    <div id="Code">
+        <p>void AddUnique(T Input)</p>
+    </div>
+
+    <p>Adds the Input to the array only if the Input doesn't exist in the Array</p>
+    <hr>
+
+    <div id="Code">
+        <p>void Insert(T Input, int Index)</p>
+    </div>
+
+    <p>Adds the Input to the array at an index</p>
+    <hr>
+
+    <div id="Code">
+        <p>void RemoveAt(int Index)</p>
+    </div>
+
+    <p>Remove the item from Index</p>
+    <hr>
+
+    <div id="Code">
+        <p>bool RemoveSingle(T Input)</p>
+    </div>
+
+    <p>Remove the first instance of Input, returns true if successful</p>
+    <hr>
+
+    <div id="Code">
+        <p>void Remove(T Input)</p>
+    </div>
+
+    <p>Remove all instances of Input</p>
+    <hr>
+
+    <div id="Code">
+        <p>void Empty()</p>
+    </div>
+
+    <p>Remove all items and set size to 0 in array</p>
+    <hr>
+
+    <h4>Operators</h4>
+
+    <div id="Code">
+        <p>[] operator (ArrayName[int index])</p>
+    </div>
+
+    <p>Returns the item from the index</p>
+    <hr>
+
+    <div id="Code">
+        <p>= Operator (Array1 = Array2)</p>
+    </div>
+
+    <p>Converts the first array into the second array</p>
+    <hr>
+
+    <div id="Code">
+        <p>+= Operator (Array1 += Array2)</p>
+    </div>
+
+    <p>Appends the first array and adds all values from the second array</p>
+    <hr>
+
+
+
+</div>
+
+
+
+    </body>
+</html>
+

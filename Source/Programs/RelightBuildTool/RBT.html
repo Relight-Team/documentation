@@ -69,6 +69,32 @@
     <p>Compiler = string</p>
     </div>
     <p>The compiler that RBT will use, 'g++' is default</p>
+    <p></p>
+    <p></p>
+    <div id="Code">
+    <p>ShowDebug = boolean</p>
+    </div>
+    <p>If true, it will show the command being used when compiling, useful for debugging, the default value is false</p>
+    <p></p>
+    <p></p>
+
+    <hr>
+    <h2>How to include a third party project into Relight engine</h2>
+    <hr>
+    <p>1. Create a folder in the /ThirdParty directory</p>
+    <div id="Code">
+        <p>/ThirdParty/Example/</p>
+    </div>
+    <p>2. Create 2 folders in your third party project director, Implement and Include</p>
+    <div id="Code">
+        <p>/ThirdParty/Example/Implement - Your implementation files goes here</p>
+        <p>/ThirdParty/Example/Include - Your include files goes here</p>
+    </div>
+    <p>3. Put your .a file in 'Implement' and your .h files in 'Include'</p>
+    <p>4. Add both implement and include into your build file (go to build instructions for more info)</p>
+    <p>5. Include your include file in your code</p>
+
+
 
 
     </body>
