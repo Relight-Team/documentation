@@ -1,0 +1,6 @@
+title: Serialization
+collapse: true
+nav:
+  - Archive.md
+  - ArchiveProxy.md
+  - FileReader.md

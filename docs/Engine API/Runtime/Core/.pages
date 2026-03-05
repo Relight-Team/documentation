@@ -1,0 +1,12 @@
+title: Core
+collapse: true
+nav:
+  - index.md
+  - Algorithm
+  - Containers
+  - Etc
+  - Hardware
+  - Log
+  - Math
+  - Platform
+  - Serialization

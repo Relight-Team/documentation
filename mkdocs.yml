@@ -1,0 +1,35 @@
+site_name: Relight Engine Documentation
+theme:
+    name: material
+    logo: assets/Logo-BW-Small.png
+    favicon: assets/Logo-Color-Small.png
+    palette:
+        scheme: slate
+        primary: dark blue
+        accent: purple
+    features:
+        - content.code.annotate
+        - navigation.sections
+        - content.path
+        - content.code.copy
+        - content.code.select
+plugins:
+    - search
+    - awesome-pages
+markdown_extensions:
+    - admonition
+    - pymdownx.details
+    - pymdownx.superfences
+    - attr_list
+    - md_in_html
+    - pymdownx.mark
+    - pymdownx.inlinehilite
+    - pymdownx.snippets
+    - pymdownx.superfences
+    - pymdownx.highlight:
+        use_pygments: true
+    - pymdownx.superfences:
+        custom_fences:
+            - name: mermaid
+              class: mermaid
+              format: !!python/name:pymdownx.superfences.fence_code_format

@@ -1,0 +1,10 @@
+title: RelightBuildTool
+collapse: true
+nav:
+  - index.md
+  - Running RelightBuildTool.md
+  - Target Files.md
+  - Module Files.md
+  - Using a Custom SDK.md
+  - Other Modes.md
+  - Behind the Scenes
