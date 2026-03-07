@@ -1026,6 +1026,34 @@
   
   
     <li class="md-nav__item">
+      <a href="Math/MathUtil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MathUtil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="Math/Range/" class="md-nav__link">
         
   
@@ -1231,6 +1259,34 @@
     
   
     PlatformOutput
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="Platform/PlatformAtomics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PlatformAtomics
   
 
     
@@ -1976,10 +2032,45 @@
 </ul>
 </li>
 <li>
-<p>Relight Engine uses the name <code>UTF16</code> to define UTF-16 characters</p>
+<p>Relight Engine uses the name <code>UTF16</code> to define UTF-16 characters. This is defined in a platform's core header</p>
+</li>
+<li>
+<p>Relight Engine has custom integer naming to ensure full compatiblity between platforms. This is defined in a platform's core ehader</p>
+<ul>
+<li>
+<p><code>int8</code> - 8-bit integer</p>
+</li>
+<li>
+<p><code>uint8</code> - unsigned 8-bit integer</p>
+</li>
+<li>
+<p><code>int16</code> - 16-bit integer</p>
+</li>
+<li>
+<p><code>uint16</code> - unsigned 16-bit integer</p>
+</li>
+<li>
+<p><code>int32</code> - 32-bit integer</p>
+</li>
+<li>
+<p><code>uint32</code> - unsigned 32-bit integer</p>
+</li>
+<li>
+<p><code>int64</code> - 64-bit integer</p>
+</li>
+<li>
+<p><code>uint64</code> - unsigned 64-bit integer</p>
+</li>
+</ul>
 </li>
 <li>
 <p>Platforms are imported based on each folder based on their platform name, all platforms uses <code>PlatformBase</code> as their parent class</p>
+</li>
+<li>
+<p>Mutliple important variables are stored in CoreGlobal</p>
+<ul>
+<li><code>RShutdownMode</code> - if true, then the runtime is shutting down</li>
+</ul>
 </li>
 </ul>
 

@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../RangeBound/">
+        <link rel="prev" href="../../Log/Log/">
       
       
-        <link rel="next" href="../../Platform/PlatformFile/">
+        <link rel="next" href="../Range/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Vector - Relight Engine Documentation</title>
+        <title>MathUtil - Relight Engine Documentation</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#vector" class="md-skip">
+        <a href="#mathutil" class="md-skip">
           Skip to content
         </a>
       
@@ -107,7 +107,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Vector
+              MathUtil
             
           </span>
         </div>
@@ -967,10 +967,37 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../MathUtil/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MathUtil
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -986,6 +1013,37 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Functions
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1051,37 +1109,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    
-  
-    Vector
-  
-
-    
-  </span>
-  
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../Vector/" class="md-nav__link">
         
   
   
@@ -1097,48 +1128,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Constructor
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#functions" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Functions
-      
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1993,17 +1982,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#constructor" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Constructor
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#functions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2031,57 +2009,12 @@
 
 
 
-<h1 id="vector">Vector</h1>
-<p>A vector stores 3 values, <code>X</code>, <code>Y</code>, and <code>Z</code>. these values can be an integer or any type of float</p>
-<h2 id="constructor">Constructor</h2>
-<p><code>FloatType</code> will be used as a placeholder for typename (note: integers can also be accepted)</p>
-<p><div class="highlight"><pre><span></span><code><span class="n">CORE_API</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">Vector</span><span class="o">&lt;</span><span class="n">FloatType</span><span class="o">&gt;</span><span class="w"> </span><span class="n">MyValue</span><span class="p">;</span>
-</code></pre></div>
-Set all 3 values to <code>0</code></p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">CORE_API</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">Vector</span><span class="o">&lt;</span><span class="n">FloatType</span><span class="o">&gt;</span><span class="w"> </span><span class="n">MyValue</span><span class="p">(</span><span class="n">FloatType</span><span class="w"> </span><span class="n">InX</span><span class="p">,</span><span class="w"> </span><span class="n">FloatType</span><span class="w"> </span><span class="n">InY</span><span class="p">,</span><span class="w"> </span><span class="n">FloatType</span><span class="w"> </span><span class="n">InZ</span><span class="p">);</span>
-</code></pre></div>
-Set X to <code>InX</code>, Y to <code>InY</code>, and Z to <code>InZ</code></p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">CORE_API</span><span class="o">::</span><span class="n">Math</span><span class="o">::</span><span class="n">Vector</span><span class="o">&lt;</span><span class="n">FloatType</span><span class="o">&gt;</span><span class="w"> </span><span class="n">MyValue</span><span class="p">(</span><span class="n">FloatType</span><span class="w"> </span><span class="n">All</span><span class="p">);</span>
-</code></pre></div>
-Set X, Y, and Z to <code>All</code></p>
+<h1 id="mathutil">MathUtil</h1>
+<p>MathUtil contains utilities for math.</p>
 <h2 id="functions">Functions</h2>
-<p><div class="highlight"><pre><span></span><code><span class="n">String</span><span class="w"> </span><span class="n">ToString</span><span class="p">()</span>
+<p><div class="highlight"><pre><span></span><code><span class="n">RMath</span><span class="o">::</span><span class="n">Max</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="n">B</span><span class="p">)</span>
 </code></pre></div>
-returns the vector as a full string, useful for debugging</p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">GetX</span><span class="p">()</span>
-</code></pre></div>
-returns the X value</p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">GetY</span><span class="p">()</span>
-</code></pre></div>
-returns the Y value</p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">GetZ</span><span class="p">()</span>
-</code></pre></div>
-returns the Z value</p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">SetX</span><span class="p">(</span><span class="n">FloatType</span><span class="w"> </span><span class="n">Input</span><span class="p">)</span>
-</code></pre></div>
-Set the X value to <code>Input</code></p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">SetY</span><span class="p">(</span><span class="n">FloatType</span><span class="w"> </span><span class="n">Input</span><span class="p">)</span>
-</code></pre></div>
-Set the Y value to <code>Input</code></p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">SetZ</span><span class="p">(</span><span class="n">FloatType</span><span class="w"> </span><span class="n">Input</span><span class="p">)</span>
-</code></pre></div>
-Set the Z value to <code>Input</code></p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="n">FloatType</span><span class="w"> </span><span class="n">Set</span><span class="p">(</span><span class="n">FloatType</span><span class="w"> </span><span class="n">InX</span><span class="p">,</span><span class="w"> </span><span class="n">FloatType</span><span class="w"> </span><span class="n">InY</span><span class="p">,</span><span class="w"> </span><span class="n">FloatType</span><span class="w"> </span><span class="n">InZ</span><span class="p">)</span>
-</code></pre></div>
-Set X to <code>InX</code>, Y to <code>InY</code>, and Z to <code>InZ</code></p>
-<hr />
-<p><div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">Serialize</span><span class="p">(</span><span class="n">Archive</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Container</span><span class="p">)</span>
-</code></pre></div>
-Serialize the vector to <code>Container</code>, returns <code>true</code> if successful</p>
+returns the greater of 2 values, T is a template that can be any value that supports being compared</p>
 
 
 

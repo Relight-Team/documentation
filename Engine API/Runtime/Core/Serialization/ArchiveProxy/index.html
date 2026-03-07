@@ -968,6 +968,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Math/MathUtil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MathUtil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Math/Range/" class="md-nav__link">
         
   
@@ -1173,6 +1201,34 @@
     
   
     PlatformOutput
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/PlatformAtomics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PlatformAtomics
   
 
     
@@ -1982,7 +2038,7 @@
 </code></pre></div>
 create an proxy archive based on <code>InArchive</code></p>
 <h2 id="functions">Functions</h2>
-<p><div class="highlight"><pre><span></span><code><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Serialize</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Length</span><span class="p">)</span>
+<p><div class="highlight"><pre><span></span><code><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Serialize</span><span class="p">(</span><span class="kt">void</span><span class="o">*</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">uint32</span><span class="w"> </span><span class="n">Length</span><span class="p">)</span>
 </code></pre></div>
 Serialize the data <code>Input</code> for the size of <code>Length</code>. By default, It will run parent Serialization</p>
 <hr />
@@ -1990,7 +2046,7 @@ Serialize the data <code>Input</code> for the size of <code>Length</code>. By de
 </code></pre></div>
 Forces data to stop and push the data into final destination. By default, it will run parent Flush</p>
 <hr />
-<p><div class="highlight"><pre><span></span><code><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Seek</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Offset</span><span class="p">)</span>
+<p><div class="highlight"><pre><span></span><code><span class="k">virtual</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="n">Seek</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">Offset</span><span class="p">)</span>
 </code></pre></div>
 Set the current offset into backing data storage by position <code>Offset</code>. By default, It will run parent Seek</p>
 
