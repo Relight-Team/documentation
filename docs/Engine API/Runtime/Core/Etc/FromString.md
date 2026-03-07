@@ -5,7 +5,7 @@ FromString is a static struct that handles converting a string into different va
 ## Functions
 
 ``` cpp
-static int FromString::Int(String& Input)
+static int32 FromString::Int(String& Input)
 ```
 Converts `Input` to int and returns it
 

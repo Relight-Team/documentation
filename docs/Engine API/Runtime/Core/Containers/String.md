@@ -90,7 +90,7 @@ Returns `true` if `String` and `B` are equal, if CaseSensitive is `false`, then 
 ---
 
 ``` cpp
-char ToChar(int I)
+char ToChar(int32 I)
 ```
 
 Convert a character at index `I` from `UTF16` to `char` and returns said `char`
@@ -98,7 +98,7 @@ Convert a character at index `I` from `UTF16` to `char` and returns said `char`
 ---
 
 ``` cpp
-int Length() const
+int32 Length() const
 ```
 
 Returns the length of a string, starting from `1`
@@ -106,7 +106,7 @@ Returns the length of a string, starting from `1`
 ---
 
 ``` cpp
-int Indices() const
+int32 Indices() const
 ```
 
 Similar to `Length()` but we start from `0` instead
@@ -210,7 +210,7 @@ returns `true` if string contains string `StrCheck`
 ---
 
 ``` cpp
-int Find(const String& StrCheck, bool CaseSensitive = true)
+int32 Find(const String& StrCheck, bool CaseSensitive = true)
 ```
 
 finds `StrCheck` and returns the index of where it's located. Returns `-1` if it doesn't exist. If `CaseSensitive` is `false`, then capitlization will be ignored
@@ -298,7 +298,7 @@ Returns the UTF16 Array
 ---
 
 ``` cpp
-void Swap(int A, int B)
+void Swap(int32 A, int32 B)
 ```
 
 Swap chracters from index `A` and index `B`
@@ -306,7 +306,7 @@ Swap chracters from index `A` and index `B`
 ---
 
 ``` cpp
-void Replace(UTF16 Input, int Index)
+void Replace(UTF16 Input, int32 Index)
 ```
 
 Replaces character and index `Index` to `Input`

@@ -15,7 +15,7 @@ Get's a constant character from file contents
 ## Functions
 
 ```cpp
-void Serialize(void* Input, int Length) override
+void Serialize(void* Input, uint32 Length) override
 ```
 Stores `Input`, which contains file contents, and set the size to `Length`
 
@@ -29,6 +29,6 @@ Return's the size of the file contents
 ---
 
 ```cpp
-String ToString
+String ToString()
 ```
 convert file contents to string

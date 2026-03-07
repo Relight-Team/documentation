@@ -24,7 +24,7 @@ Gets a config value and store it as a String, returns `true` if successful. `Sec
 ---
 
 ``` cpp
-static bool Config::GetInt(String Section, String Variable, int& Output, String File)
+static bool Config::GetInt(String Section, String Variable, int32& Output, String File)
 ```
 
 Gets a config value and store it as an 32-bit integer, returns `true` if successful. `Section` will get the sepcified section the value is located at, `Variable` will be the name of the value we are getting, `Output` is where we will store the value, and `File` is the specified file the value is located in

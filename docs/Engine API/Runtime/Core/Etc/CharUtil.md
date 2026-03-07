@@ -5,7 +5,7 @@ CharUtil.h contains utilities for handling characters (both `char` and `UTF16`)
 ## Functions
 
 ``` cpp
-static int CharUtil::CharToInt(char Character)
+static int32 CharUtil::CharToInt(char Character)
 ```
 
 Convert a char to an integer
@@ -13,7 +13,7 @@ Convert a char to an integer
 ---
 
 ``` cpp
-static char CharUtil::IntToChar(int DEC)
+static char CharUtil::IntToChar(int32 DEC)
 ```
 
 Convert an integer into a character

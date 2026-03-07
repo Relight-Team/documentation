@@ -12,7 +12,7 @@ Create an archive
 ## Functions
 
 ```cpp
-virtual void Serialize(void* Input, int Length)
+virtual void Serialize(void* Input, uint32 Length)
 ```
 Serialize the data `Input` for the size of `Length`. By default, Archive will just run `Memset` on the data
 
@@ -26,7 +26,7 @@ Forces data to stop and push the data into final destination. By default, it doe
 ---
 
 ```cpp
-virtual void Seek(int Offset)
+virtual void Seek(int32 Offset)
 ```
 Set the current offset into backing data storage by position `Offset`. By default, it does nothing
 

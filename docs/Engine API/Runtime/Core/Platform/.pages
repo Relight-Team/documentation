@@ -4,3 +4,4 @@ nav:
   - PlatformFile.md
   - PlatformMisc.md
   - PlatformOutput.md
+  - PlatformAtomics.md

@@ -25,7 +25,7 @@ returns the value from `Tkey`, if it doesn't exist, it will create a key with de
 ## Functions
 
 ``` cpp
-int Indices()
+int32 Indices()
 ```
 
 Returns the length of map starting at `0`
@@ -41,7 +41,7 @@ Returns `true` if the key exists
 ---
 
 ``` cpp
-int Find(KeyType A)
+int32 Find(KeyType A)
 ```
 
 Returns the index of the key, returns `-1` if it's false
@@ -49,7 +49,7 @@ Returns the index of the key, returns `-1` if it's false
 ---
 
 ``` cpp
-KeyType First(int i)
+KeyType First(int32 i)
 ```
 
 Returns the key based on index `i`
@@ -57,7 +57,7 @@ Returns the key based on index `i`
 ---
 
 ``` cpp
-ValueType Second(int i)
+ValueType Second(int32 i)
 ```
 
 Returns the value based on index `i`

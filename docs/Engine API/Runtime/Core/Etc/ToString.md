@@ -5,7 +5,7 @@ ToString holds functions that will convert a variable to string
 ## Functions
 
 ```cpp
-inline String CORE_API::ToString(int Input)
+inline String CORE_API::ToString(int32 Input)
 ```
 Return's a string based on int
 

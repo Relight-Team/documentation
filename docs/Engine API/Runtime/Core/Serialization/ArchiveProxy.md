@@ -12,7 +12,7 @@ create an proxy archive based on `InArchive`
 ## Functions
 
 ```cpp
-virtual void Serialize(void* Input, int Length)
+virtual void Serialize(void* Input, uint32 Length)
 ```
 Serialize the data `Input` for the size of `Length`. By default, It will run parent Serialization
 
@@ -26,6 +26,6 @@ Forces data to stop and push the data into final destination. By default, it wil
 ---
 
 ```cpp
-virtual void Seek(int Offset)
+virtual void Seek(int32 Offset)
 ```
 Set the current offset into backing data storage by position `Offset`. By default, It will run parent Seek

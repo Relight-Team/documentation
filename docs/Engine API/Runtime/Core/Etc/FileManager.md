@@ -19,14 +19,14 @@ Will read a `File` and store it's contents in the [FileReader Archive]() called 
 ---
 
 ``` cpp
-static bool FileManager::WriteFile(String File, Array<int> Contents)
+static bool FileManager::WriteFile(String File, Array<int32> Contents)
 ```
 Will write `Contents` to `File`, return's `true` if successful
 
 ---
 
 ``` cpp
-static bool FileManager::WriteFile(String File, int* Contents, int Size)
+static bool FileManager::WriteFile(String File, int32* Contents, int32 Size)
 ```
 Will write the integer array of `Contents` to `File`, return's `true` if successful
 

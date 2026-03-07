@@ -28,7 +28,7 @@ Create's a file called `File`
 ---
 
 ```cpp
-static bool PlatformFile::WriteFile(String File, Array<int> Contents)
+static bool PlatformFile::WriteFile(String File, Array<int32> Contents)
 ```
 Write's a file called `File` and writes `Contents` to the file
 

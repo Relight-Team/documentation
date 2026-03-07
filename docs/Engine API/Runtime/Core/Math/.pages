@@ -1,6 +1,7 @@
 title: Math
 collapse: true
 nav:
+  - MathUtil.md
   - Range.md
   - RangeBound.md
   - Vector.md

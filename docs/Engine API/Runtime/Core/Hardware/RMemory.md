@@ -8,14 +8,14 @@ RMemory is relight's custom memory management struct. Handling allocating and de
 ## Functions
 
 ```cpp
-static void* RMemory::Malloc(size_t Size, int Alignment = 0)
+static void* RMemory::Malloc(size_t Size, int32 Alignment = 0)
 ```
 Allocate's memory on heap for `Size` and return it's pointer
 
 ---
 
 ```cpp
-static void* RMemory::Realloc(void* Ptr, size_t Size, int Alignment = 0)
+static void* RMemory::Realloc(void* Ptr, size_t Size, int32 Alignment = 0)
 ```
 changes size to `Size` for `Ptr`, may expand and/or move to new location, return new pointer
 
@@ -43,7 +43,7 @@ Compares memory `A` and memory `B` for `Size` amount of bytes to check, returns 
 ---
 
 ```cpp
-static void* RMemory::Memset(void* A, int C, size_t Size)
+static void* RMemory::Memset(void* A, int32 C, size_t Size)
 ```
 Fills the memory block `A` with the content `C` for `Size` bytes. Returns filled pointer
 
@@ -53,3 +53,10 @@ Fills the memory block `A` with the content `C` for `Size` bytes. Returns filled
 static void* RMemory::Memcpy(void* Dest, void* Src, size_t Size)
 ```
 Similar to to `Memmove`, but with the main difference being that `memcpy` isn't safe with overlaps (will cause undefined behavior), but it is faster than `Memmove`. Only use this if you are 100% sure that the new memory region does not overlap
+
+---
+
+```cpp
+static void* RMemory::Memzero(void* A, size_t Size)
+```
+Fills the memory block `A` with 0 for `Size` bytes. Returns filled pointer

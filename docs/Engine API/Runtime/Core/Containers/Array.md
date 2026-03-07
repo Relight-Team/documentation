@@ -64,7 +64,7 @@ You can append an array using `+=` operator
 
 
 ``` cpp
-void Init(T Repeat, int Size)
+void Init(T Repeat, int32 Size)
 ```
 
 Will initialize the array by repeating `Repeat` for the length of `Size`
@@ -72,7 +72,7 @@ Will initialize the array by repeating `Repeat` for the length of `Size`
 ---
 
 ``` cpp
-void Init(T Input[], int Size)
+void Init(T Input[], int32 Size)
 ```
 
 Will initialize the array getting each item in the `Input` array until we reach `Size`
@@ -80,7 +80,7 @@ Will initialize the array getting each item in the `Input` array until we reach 
 ---
 
 ``` cpp
-int Length() const
+int32 Length() const
 ```
 
 Returns the length of the array, starting at `1`
@@ -88,7 +88,7 @@ Returns the length of the array, starting at `1`
 ---
 
 ``` cpp
-int Indices() const
+int32 Indices() const
 ```
 
 Returns the Indices of the array, similar to `Length()`, but starts at `0` instead
@@ -104,7 +104,7 @@ Returns `true` if the array contains `Input`
 ---
 
 ``` cpp
-bool Find(T Input, int& Value)
+bool Find(T Input, int32& Value)
 ```
 
 Will try to find first instance of`Input` in the array and store the index in `Value`. Returns `true` if `Input` exists
@@ -112,15 +112,15 @@ Will try to find first instance of`Input` in the array and store the index in `V
 ---
 
 ``` cpp
-bool FindLast(T Input, int& Value)
+bool FindLast(T Input, int32& Value)
 ```
 
-Similar to `Find(T Input, int& Value)` except looks for the last instance instead
+Similar to `Find(T Input, int32& Value)` except looks for the last instance instead
 
 ---
 
 ``` cpp
-int GetTypeSize()
+int32 GetTypeSize()
 ```
 
 Returns the size of value, similar to `sizeof(T)`
@@ -128,7 +128,7 @@ Returns the size of value, similar to `sizeof(T)`
 ---
 
 ``` cpp
-bool IsValidIndex(int Index)
+bool IsValidIndex(int32 Index)
 ```
 
 Returns `true` if `Index` is a valid array slot
@@ -152,7 +152,7 @@ Returns the first item in list
 ---
 
 ``` cpp
-T Top(int a)
+T Top(int32 a)
 ```
 
 Returns the item from `0` to `a` (`0 + a`)
@@ -168,7 +168,7 @@ Returns the last item in list
 ---
 
 ``` cpp
-T Last(int a)
+T Last(int32 a)
 ```
 
 Returns the item from the last to `a` (`[Last Item Index] - a`)
@@ -184,7 +184,7 @@ Add `Input` to the array
 ---
 
 ``` cpp
-void Append(const Array& Input, int Size)
+void Append(const Array& Input, int32 Size)
 ```
 
 Adds `Input` to the array up to `Size`
@@ -200,7 +200,7 @@ Only adds `Input` to array if `Input` doesn't exist in the array
 ---
 
 ``` cpp
-void Insert(T Input, int Index)
+void Insert(T Input, int32 Index)
 ```
 
 Insert's `Input` at `Index`. Will move the rest of the values to the right
@@ -208,7 +208,7 @@ Insert's `Input` at `Index`. Will move the rest of the values to the right
 ---
 
 ``` cpp
-void RemoveAt(int Index)
+void RemoveAt(int32 Index)
 ```
 
 Removes an item at `Index`
@@ -216,10 +216,18 @@ Removes an item at `Index`
 ---
 
 ``` cpp
-T Pop(int Index)
+T Pop(int32 Index)
 ```
 
 Removes an item at `Index`, returns the removed item
+
+---
+
+``` cpp
+T Pop()
+```
+
+Removes the last item, returns the removed item
 
 ---
 
@@ -248,7 +256,7 @@ Removes everything in the array
 ---
 
 ``` cpp
-bool SplitIndex(int Index, Array<T>& Left, Array<T>& Right)
+bool SplitIndex(int32 Index, Array<T>& Left, Array<T>& Right)
 ```
 
 Split the array into 2 and stored in `Left` and `Right` based on `Index`, `Index` value will be excluded. Returns true if successful
@@ -256,10 +264,10 @@ Split the array into 2 and stored in `Left` and `Right` based on `Index`, `Index
 ---
 
 ``` cpp
-bool SplitIndexInclusive(int Index, Array<T>& Left, Array<T>& Right)
+bool SplitIndexInclusive(int32 Index, Array<T>& Left, Array<T>& Right)
 ```
 
-Similar to `bool SplitIndex(int Index, Array<T>& Left, Array<T>& Right)` but we will keep the index value and will be stored in `Right`
+Similar to `bool SplitIndex(int32 Index, Array<T>& Left, Array<T>& Right)` but we will keep the index value and will be stored in `Right`
 
 ---
 
@@ -272,7 +280,7 @@ Will split the array based on `Item`, the split will be stored in `Left` and `Ri
 ---
 
 ``` cpp
-void Swap(int A, int B)
+void Swap(int32 A, int32 B)
 ```
 
 Will swap index `A` and index `B`, `(example: [1, 2] = [2, 1])`
@@ -280,7 +288,7 @@ Will swap index `A` and index `B`, `(example: [1, 2] = [2, 1])`
 ---
 
 ``` cpp
-void Replace(T Input, int Index)
+void Replace(T Input, int32 Index)
 ```
 
 Will replace item at `Index` to `Input`
