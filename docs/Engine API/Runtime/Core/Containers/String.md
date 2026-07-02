@@ -32,25 +32,25 @@ You can also set the default string to be a `char` pointer
 ---
 
 ``` cpp
-UTF16* A = {"a", "b", "c"};
+UTF8* A = {"a", "b", "c"};
 String StrName = A;
 ```
 
-You can also set the default string to be a [UTF16]() pointer
+You can also set the default string to be a UTF8 pointer
 
 ---
 
 ``` cpp
-Array<UTF16> HelloWorld = {"a", "b", "c"};
+Array<UTF8> HelloWorld = {"a", "b", "c"};
 String StrName = HelloWorld;
 ```
 
-You can also set the default string using UTF16 [Array](../Array)
+You can also set the default string using UTF8 [Array](../Array)
 
 ## Operators
 
 ``` cpp
-UTF16 StrName[Integer];
+UTF8 StrName[Integer];
 ```
 
 You can get a specific character using `[]`
@@ -93,7 +93,7 @@ Returns `true` if `String` and `B` are equal, if CaseSensitive is `false`, then 
 char ToChar(int32 I)
 ```
 
-Convert a character at index `I` from `UTF16` to `char` and returns said `char`
+Convert a character at index `I` from `UTF8` to `char` and returns said `char`
 
 ---
 
@@ -130,7 +130,7 @@ Returns a new string where all characters are lowercase
 ---
 
 ``` cpp
-void Append(const UTF16& B)
+void Append(const UTF8& B)
 ```
 
 Append's character `B` to String
@@ -146,10 +146,10 @@ Append's String `B` to String
 ---
 
 ``` cpp
-void Append(const UTF16* B)
+void Append(const UTF8* B)
 ```
 
-Append's UTF16 array `B` to String
+Append's UTF8 array `B` to String
 
 ---
 
@@ -162,10 +162,10 @@ Append's char array `B` to String
 ---
 
 ``` cpp
-void Add(const UTF16& B)
+void Add(const UTF8& B)
 ```
 
-The same as `void Append(const UTF16& B)`
+The same as `void Append(const UTF8& B)`
 
 ---
 
@@ -194,7 +194,7 @@ Returns a copy of the string in reverse
 ---
 
 ``` cpp
-bool Contains(const UTF16& StrCheck)
+bool Contains(const UTF8& StrCheck)
 ```
 
 returns `true` if string contains character `StrCheck`
@@ -222,6 +222,14 @@ bool Split(String& Str, String& Left, String& Right, bool CaseSensitive = true)
 ```
 
 finds the index of where `Str` is located in the string, and split it between `Left` and `Right`. If `CaseSensitive` is `false`, then capitlization will be ignored. Str can also be `const`
+
+---
+
+``` cpp
+bool SplitInclusive(String& Str, String& Left, String& Right, bool CaseSensitive = true)
+```
+
+Similar to `Split`, but keep the `split character` on `Right`. Str can also be `const`
 
 ---
 
@@ -258,7 +266,7 @@ Removes any whitespace from both beginning and end of string
 ---
 
 ``` cpp
-void TrimStartChar(UTF16 Input)
+void TrimStartChar(UTF8 Input)
 ```
 
 Remove the first character if the first character is `Input`
@@ -266,7 +274,7 @@ Remove the first character if the first character is `Input`
 ---
 
 ``` cpp
-void TrimEndChar(UTF16 Input)
+void TrimEndChar(UTF8 Input)
 ```
 
 Remove the last character if the last character is `Input`
@@ -274,7 +282,7 @@ Remove the last character if the last character is `Input`
 ---
 
 ``` cpp
-void TrimChar(UTF16 Input)
+void TrimChar(UTF8 Input)
 ```
 
 Remove the first and last character if the characters are `Input`
@@ -290,10 +298,10 @@ Removes any quotes at beginning and end of string
 ---
 
 ``` cpp
-Array<UTF16> ToArr()
+Array<UTF8> ToArr()
 ```
 
-Returns the UTF16 Array
+Returns the UTF8 Array
 
 ---
 
@@ -306,7 +314,7 @@ Swap chracters from index `A` and index `B`
 ---
 
 ``` cpp
-void Replace(UTF16 Input, int32 Index)
+void Replace(UTF8 Input, int32 Index)
 ```
 
 Replaces character and index `Index` to `Input`
@@ -318,3 +326,19 @@ Array<char> ToArrayChar()
 ```
 
 Get any valid characters and return a char Array with them
+
+---
+
+``` cpp
+UTF8* ReturnPointer()
+```
+
+Return's the UTF8 pointer of the string
+
+---
+
+``` cpp
+char* ToCStr()
+```
+
+Return's the char pointer of the string

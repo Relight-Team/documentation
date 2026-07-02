@@ -1050,6 +1050,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Math/MathUtil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MathUtil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Math/Range/" class="md-nav__link">
         
   
@@ -1255,6 +1283,34 @@
     
   
     PlatformOutput
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/PlatformAtomics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PlatformAtomics
   
 
     
@@ -2034,19 +2090,19 @@
 <p class="admonition-title">T template</p>
 <p><code>T</code> will be use as the typename for your value</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Init</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Repeat</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Size</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Init</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Repeat</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">Size</span><span class="p">)</span>
 </code></pre></div>
 <p>Will initialize the array by repeating <code>Repeat</code> for the length of <code>Size</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Init</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">[],</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Size</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Init</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">[],</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">Size</span><span class="p">)</span>
 </code></pre></div>
 <p>Will initialize the array getting each item in the <code>Input</code> array until we reach <code>Size</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">Length</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+<div class="highlight"><pre><span></span><code><span class="n">int32</span><span class="w"> </span><span class="n">Length</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
 </code></pre></div>
 <p>Returns the length of the array, starting at <code>1</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">Indices</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+<div class="highlight"><pre><span></span><code><span class="n">int32</span><span class="w"> </span><span class="n">Indices</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
 </code></pre></div>
 <p>Returns the Indices of the array, similar to <code>Length()</code>, but starts at <code>0</code> instead</p>
 <hr />
@@ -2054,19 +2110,19 @@
 </code></pre></div>
 <p>Returns <code>true</code> if the array contains <code>Input</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">Find</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Value</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">Find</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Value</span><span class="p">)</span>
 </code></pre></div>
 <p>Will try to find first instance of<code>Input</code> in the array and store the index in <code>Value</code>. Returns <code>true</code> if <code>Input</code> exists</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">FindLast</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Value</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">FindLast</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Value</span><span class="p">)</span>
 </code></pre></div>
-<p>Similar to <code>Find(T Input, int&amp; Value)</code> except looks for the last instance instead</p>
+<p>Similar to <code>Find(T Input, int32&amp; Value)</code> except looks for the last instance instead</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">GetTypeSize</span><span class="p">()</span>
+<div class="highlight"><pre><span></span><code><span class="n">int32</span><span class="w"> </span><span class="n">GetTypeSize</span><span class="p">()</span>
 </code></pre></div>
 <p>Returns the size of value, similar to <code>sizeof(T)</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">IsValidIndex</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">IsValidIndex</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
 </code></pre></div>
 <p>Returns <code>true</code> if <code>Index</code> is a valid array slot</p>
 <hr />
@@ -2078,7 +2134,7 @@
 </code></pre></div>
 <p>Returns the first item in list</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Top</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Top</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 <p>Returns the item from <code>0</code> to <code>a</code> (<code>0 + a</code>)</p>
 <hr />
@@ -2086,7 +2142,7 @@
 </code></pre></div>
 <p>Returns the last item in list</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Last</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Last</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">a</span><span class="p">)</span>
 </code></pre></div>
 <p>Returns the item from the last to <code>a</code> (<code>[Last Item Index] - a</code>)</p>
 <hr />
@@ -2094,7 +2150,7 @@
 </code></pre></div>
 <p>Add <code>Input</code> to the array</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Append</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Array</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Size</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Append</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Array</span><span class="o">&amp;</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">Size</span><span class="p">)</span>
 </code></pre></div>
 <p>Adds <code>Input</code> to the array up to <code>Size</code></p>
 <hr />
@@ -2102,17 +2158,21 @@
 </code></pre></div>
 <p>Only adds <code>Input</code> to array if <code>Input</code> doesn't exist in the array</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Insert</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Insert</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
 </code></pre></div>
 <p>Insert's <code>Input</code> at <code>Index</code>. Will move the rest of the values to the right</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">RemoveAt</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">RemoveAt</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
 </code></pre></div>
 <p>Removes an item at <code>Index</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Pop</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Pop</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
 </code></pre></div>
 <p>Removes an item at <code>Index</code>, returns the removed item</p>
+<hr />
+<div class="highlight"><pre><span></span><code><span class="n">T</span><span class="w"> </span><span class="n">Pop</span><span class="p">()</span>
+</code></pre></div>
+<p>Removes the last item, returns the removed item</p>
 <hr />
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">RemoveSingle</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">)</span>
 </code></pre></div>
@@ -2126,23 +2186,23 @@
 </code></pre></div>
 <p>Removes everything in the array</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">SplitIndex</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Left</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Right</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">SplitIndex</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Left</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Right</span><span class="p">)</span>
 </code></pre></div>
 <p>Split the array into 2 and stored in <code>Left</code> and <code>Right</code> based on <code>Index</code>, <code>Index</code> value will be excluded. Returns true if successful</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">SplitIndexInclusive</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Left</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Right</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">SplitIndexInclusive</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Left</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Right</span><span class="p">)</span>
 </code></pre></div>
-<p>Similar to <code>bool SplitIndex(int Index, Array&lt;T&gt;&amp; Left, Array&lt;T&gt;&amp; Right)</code> but we will keep the index value and will be stored in <code>Right</code></p>
+<p>Similar to <code>bool SplitIndex(int32 Index, Array&lt;T&gt;&amp; Left, Array&lt;T&gt;&amp; Right)</code> but we will keep the index value and will be stored in <code>Right</code></p>
 <hr />
 <div class="highlight"><pre><span></span><code><span class="kt">bool</span><span class="w"> </span><span class="n">Split</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">ItemToSplit</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Left</span><span class="p">,</span><span class="w"> </span><span class="n">Array</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;&amp;</span><span class="w"> </span><span class="n">Right</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">Last</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">Inclusive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">false</span><span class="p">)</span>
 </code></pre></div>
 <p>Will split the array based on <code>Item</code>, the split will be stored in <code>Left</code> and <code>Right</code>. If <code>Last</code> is <code>true</code>, then we will find the last item instead of the first. If <code>Inclusive</code> is <code>true</code>, then the index value will be included and stored in <code>Right</code>. Returns <code>true</code> if successful</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Swap</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">B</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Swap</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">B</span><span class="p">)</span>
 </code></pre></div>
 <p>Will swap index <code>A</code> and index <code>B</code>, <code>(example: [1, 2] = [2, 1])</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Replace</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Replace</span><span class="p">(</span><span class="n">T</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
 </code></pre></div>
 <p>Will replace item at <code>Index</code> to <code>Input</code></p>
 <hr />

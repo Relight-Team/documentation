@@ -1,4 +1,5 @@
 title: Hardware
 collapse: true
 nav:
+  - Thread
   - RMemory.md

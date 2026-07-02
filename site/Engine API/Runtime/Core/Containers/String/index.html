@@ -1050,6 +1050,34 @@
   
   
     <li class="md-nav__item">
+      <a href="../../Math/MathUtil/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MathUtil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../Math/Range/" class="md-nav__link">
         
   
@@ -1255,6 +1283,34 @@
     
   
     PlatformOutput
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../Platform/PlatformAtomics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PlatformAtomics
   
 
     
@@ -2044,15 +2100,15 @@
 </code></pre></div>
 <p>Returns <code>true</code> if <code>String</code> and <code>B</code> are equal, if CaseSensitive is <code>false</code>, then capitlization will be ignored</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">ToChar</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">I</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">char</span><span class="w"> </span><span class="n">ToChar</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">I</span><span class="p">)</span>
 </code></pre></div>
 <p>Convert a character at index <code>I</code> from <code>UTF16</code> to <code>char</code> and returns said <code>char</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">Length</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+<div class="highlight"><pre><span></span><code><span class="n">int32</span><span class="w"> </span><span class="n">Length</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
 </code></pre></div>
 <p>Returns the length of a string, starting from <code>1</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">Indices</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
+<div class="highlight"><pre><span></span><code><span class="n">int32</span><span class="w"> </span><span class="n">Indices</span><span class="p">()</span><span class="w"> </span><span class="k">const</span>
 </code></pre></div>
 <p>Similar to <code>Length()</code> but we start from <code>0</code> instead</p>
 <hr />
@@ -2104,7 +2160,7 @@
 </code></pre></div>
 <p>returns <code>true</code> if string contains string <code>StrCheck</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">int</span><span class="w"> </span><span class="n">Find</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">StrCheck</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">CaseSensitive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="n">int32</span><span class="w"> </span><span class="n">Find</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">String</span><span class="o">&amp;</span><span class="w"> </span><span class="n">StrCheck</span><span class="p">,</span><span class="w"> </span><span class="kt">bool</span><span class="w"> </span><span class="n">CaseSensitive</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
 </code></pre></div>
 <p>finds <code>StrCheck</code> and returns the index of where it's located. Returns <code>-1</code> if it doesn't exist. If <code>CaseSensitive</code> is <code>false</code>, then capitlization will be ignored</p>
 <hr />
@@ -2148,11 +2204,11 @@
 </code></pre></div>
 <p>Returns the UTF16 Array</p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Swap</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">B</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Swap</span><span class="p">(</span><span class="n">int32</span><span class="w"> </span><span class="n">A</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">B</span><span class="p">)</span>
 </code></pre></div>
 <p>Swap chracters from index <code>A</code> and index <code>B</code></p>
 <hr />
-<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Replace</span><span class="p">(</span><span class="n">UTF16</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
+<div class="highlight"><pre><span></span><code><span class="kt">void</span><span class="w"> </span><span class="n">Replace</span><span class="p">(</span><span class="n">UTF16</span><span class="w"> </span><span class="n">Input</span><span class="p">,</span><span class="w"> </span><span class="n">int32</span><span class="w"> </span><span class="n">Index</span><span class="p">)</span>
 </code></pre></div>
 <p>Replaces character and index <code>Index</code> to <code>Input</code></p>
 <hr />

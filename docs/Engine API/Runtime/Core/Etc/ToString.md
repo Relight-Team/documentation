@@ -40,9 +40,9 @@ Return's a string, simply here to aid in Array conversion
 ---
 
 ```cpp
-inline String CORE_API::ToString(const UTF16* Input)
+inline String CORE_API::ToString(const UTF8* Input)
 ```
-Return's a string based on UTF16 pointer array
+Return's a string based on UTF8 pointer array
 
 ---
 

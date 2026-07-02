@@ -1,0 +1,14 @@
+title: Templates
+collapse: true
+nav:
+  - Template.md
+  - Bytes.md
+  - Decay.md
+  - FunctionOwner.md
+  - FunctionStorage.md
+  - FunctionRunner.md
+  - FunctionReference.md
+  - Invoke.md
+  - IsConstructible.md
+  - IsSameType.md
+  - RemoveReference.md

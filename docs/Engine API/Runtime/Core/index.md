@@ -16,9 +16,11 @@ The Core module contains common code that will be used everywhere in the engine.
 
     - `PlatformCore.h` contains important code and includes needed for almost every file
 
-- Relight Engine uses the name `UTF16` to define UTF-16 characters. This is defined in a platform's core header
+- Relight Engine uses the `UTF8` type to define UTF-8 encoded characters. This is defined in a platform's core header
 
-- Relight Engine has custom integer naming to ensure full compatiblity between platforms. This is defined in a platform's core ehader
+- Literal strings can be encoded as utf-8 using the `U("")` macro
+
+- Relight Engine has custom integer naming to ensure full compatiblity between platforms. This is defined in a platform's core header
 
     - `int8` - 8-bit integer
 

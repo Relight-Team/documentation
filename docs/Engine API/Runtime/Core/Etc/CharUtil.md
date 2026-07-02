@@ -1,6 +1,6 @@
 # CharUtil
 
-CharUtil.h contains utilities for handling characters (both `char` and `UTF16`)
+CharUtil.h contains utilities for handling characters (both `char` and `UTF8`)
 
 ## Functions
 

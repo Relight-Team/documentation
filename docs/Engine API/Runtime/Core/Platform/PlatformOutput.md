@@ -12,14 +12,14 @@ Print's out string `Input` to system's terminal output
 ---
 
 ```cpp
-static void PlatformOutput::Print(const Array<UTF16>& Input)
+static void PlatformOutput::Print(const Array<UTF8>& Input)
 ```
 Print's out array `Input` to system's terminal output
 
 ---
 
 ```cpp
-static void PlatformOutput::Print(const UTF16& Input)
+static void PlatformOutput::Print(const UTF8& Input)
 ```
 Print's out UTF-16 character `Input` to system's terminal output
 

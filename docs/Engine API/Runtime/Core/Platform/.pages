@@ -5,3 +5,4 @@ nav:
   - PlatformMisc.md
   - PlatformOutput.md
   - PlatformAtomics.md
+  - PlatformTLS.md

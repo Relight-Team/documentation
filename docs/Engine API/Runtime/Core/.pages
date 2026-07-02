@@ -10,3 +10,5 @@ nav:
   - Math
   - Platform
   - Serialization
+  - Templates
+  - RObject
